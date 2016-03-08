@@ -17,10 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="parrotx1" translatesAutoresizingMaskIntoConstraints="NO" id="ev1-QD-ChT">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="parrotx1" translatesAutoresizingMaskIntoConstraints="NO" id="ev1-QD-ChT">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="450"/>
                             </imageView>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2lR-qF-HqN">
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2lR-qF-HqN">
                                 <rect key="frame" x="0.0" y="452" width="600" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="App to demo Adaptive Layout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Jf-C5-uJK">
@@ -40,6 +40,15 @@
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ev1-QD-ChT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Tq-sf-IVR"/>
+                            <constraint firstAttribute="trailing" secondItem="ev1-QD-ChT" secondAttribute="trailing" id="JSs-GN-bKw"/>
+                            <constraint firstItem="ev1-QD-ChT" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RMy-DG-GBM"/>
+                            <constraint firstItem="2lR-qF-HqN" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="UY8-mz-ITA"/>
+                            <constraint firstAttribute="trailing" secondItem="2lR-qF-HqN" secondAttribute="trailing" id="Vcd-Ip-ZsK"/>
+                            <constraint firstItem="ev1-QD-ChT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="lER-QL-R0U"/>
+                            <constraint firstAttribute="bottom" secondItem="2lR-qF-HqN" secondAttribute="bottom" id="mcb-Gf-f6c"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
